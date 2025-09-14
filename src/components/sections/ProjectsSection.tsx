@@ -141,7 +141,7 @@ const ProjectsSection = () => {
                   <div className="p-5">
                     <p className="text-foreground/70">{project.description}</p>
                     <div className="mt-4 flex gap-3">
-                      <a
+                      {/* <a
                         href={project.demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -149,7 +149,7 @@ const ProjectsSection = () => {
                       >
                         <ExternalLink size={14} />
                         Live Demo
-                      </a>
+                      </a> */}
                       <a
                         href={project.githubUrl}
                         target="_blank"
@@ -185,14 +185,14 @@ const ProjectsSection = () => {
               
               <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
                 <div className="flex gap-2">
-                  <a
+                  {/* <a
                     href={project.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 bg-background/80 backdrop-blur-sm rounded-full text-primary hover:bg-background transition-colors"
                   >
                     <ExternalLink size={16} />
-                  </a>
+                  </a> */}
                   <a
                     href={project.githubUrl}
                     target="_blank"
@@ -217,7 +217,7 @@ const ProjectsSection = () => {
             
             <p className="text-foreground/70 text-sm line-clamp-2">{project.description}</p>
             
-            <a
+            {/* <a
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -225,7 +225,7 @@ const ProjectsSection = () => {
             >
               <Info size={14} className="mr-1" />
               Learn more
-            </a>
+            </a> */}
           </div>
         ))}
       </div>
