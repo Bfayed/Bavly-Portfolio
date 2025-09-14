@@ -4,12 +4,20 @@ import { Code, BookOpen, Database, Layers } from "lucide-react";
 
 const AboutSection = () => {
   const skills = [
+    { name: "Java + Spring Boot", value: 70 },
+    { name: "Python", value: 70 },
+    { name: "C# + .Net", value: 60 },
+    { name: "SQL Server", value: 50 },
+    { name: "MVC", value: 60 },
+    { name: "RabbitMQ", value: 60 },
     { name: "HTML & CSS", value: 90 },
-    { name: "JavaScript", value: 85 },
-    { name: "React", value: 80 },
-    { name: "TypeScript", value: 75 },
+    { name: "JavaScript & TypeScript", value: 80 },
+    { name: "React", value: 70 },
+    { name: "Angular", value: 85 },
     { name: "Node.js", value: 70 },
-    { name: "UI/UX Design", value: 65 },
+    { name: "UI/UX Design", value: 80 },
+
+
   ];
 
   const services = [
@@ -43,7 +51,7 @@ const AboutSection = () => {
           
           <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <p className="text-foreground/80">
-              Hello! I'm Your Name, a passionate developer with over X years of experience in creating digital solutions. I enjoy tackling complex problems and turning them into simple and beautiful interface designs.
+              Hello! I'm Bavly Fayed, a passionate developer with over X years of experience in creating digital solutions. I enjoy tackling complex problems and turning them into simple and beautiful interface designs.
             </p>
             
             <p className="text-foreground/80">
@@ -58,7 +66,7 @@ const AboutSection = () => {
           <div className="mt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <h3 className="text-xl font-semibold mb-4">Tech Stack</h3>
             <div className="flex flex-wrap gap-2">
-              {["JavaScript", "TypeScript", "React", "Node.js", "Express", "MongoDB", "PostgreSQL", "HTML", "CSS", "Tailwind CSS", "Git"].map((tech) => (
+              {["Java", "Python", " .Net", "C#", "React", "Node.js", "Express", "MongoDB", "JavaScript", "HTML", "Angular", "Tailwind CSS", "TypeScript", "Spring Boot", "SQL Server", "RabbitMQ", "MVC"].map((tech) => (
                 <span key={tech} className="bg-secondary/50 text-foreground/90 px-3 py-1 rounded-full text-sm">
                   {tech}
                 </span>
