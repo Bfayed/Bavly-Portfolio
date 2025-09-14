@@ -41,17 +41,17 @@ const Navbar = () => {
   const socialLinks = [
     { 
       name: "GitHub", 
-      href: "https://github.com/yourusername", 
+      href: "https://github.com/Bfayed", 
       icon: Github 
     },
     { 
       name: "LinkedIn", 
-      href: "https://linkedin.com/in/yourusername", 
+      href: "https://linkedin.com/in/bavlyfayed2003", 
       icon: Linkedin 
     },
     { 
       name: "Instagram", 
-      href: "https://twitter.com/yourusername", 
+      href: "https://www.instagram.com/iambavly10/", 
       icon: Instagram 
     }
   ];

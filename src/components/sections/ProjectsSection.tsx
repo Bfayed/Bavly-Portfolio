@@ -61,7 +61,7 @@ const ProjectsSection = () => {
       title: "Blog Platform",
       description: "A blog platform with markdown support, comments, and user authentication. Includes admin dashboard for content management.",
       image: "/placeholder.svg",
-      tags: ["React", "Node.js", "PostgreSQL"],
+      tags: ["React", "Node.js", "SQL Server"],
       demoUrl: "#",
       githubUrl: "#",
       featured: true,
