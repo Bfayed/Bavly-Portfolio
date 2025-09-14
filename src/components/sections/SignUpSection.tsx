@@ -22,14 +22,14 @@ const SignUpSection = () => {
       [name]: value,
     }));
 
-    // Clear password error when editing password fields
+ 
     if (name === "password" || name === "confirmPassword") {
       setPasswordError("");
     }
   };
 
   const validateForm = () => {
-    // Password validation
+
     if (formData.password !== formData.confirmPassword) {
       setPasswordError("Passwords do not match");
       return false;
@@ -49,8 +49,7 @@ const SignUpSection = () => {
     if (!validateForm()) return;
     
     setIsSubmitting(true);
-    
-    // Simulate form submission
+ 
     setTimeout(() => {
       console.log("Sign up form submitted:", formData);
       
@@ -92,7 +91,7 @@ const SignUpSection = () => {
                       onChange={handleChange}
                       required
                       className="input-field pl-10"
-                      placeholder="John Doe"
+                      placeholder="Bavly Fayed"
                     />
                   </div>
                 </div>
@@ -113,7 +112,7 @@ const SignUpSection = () => {
                       onChange={handleChange}
                       required
                       className="input-field pl-10"
-                      placeholder="john@example.com"
+                      placeholder="Bavly@example.com"
                     />
                   </div>
                 </div>
@@ -134,7 +133,7 @@ const SignUpSection = () => {
                       onChange={handleChange}
                       required
                       className={`input-field pl-10 ${passwordError ? 'border-destructive/50' : ''}`}
-                      placeholder="••••••••"
+                      placeholder="password here"
                     />
                   </div>
                 </div>
@@ -155,7 +154,7 @@ const SignUpSection = () => {
                       onChange={handleChange}
                       required
                       className={`input-field pl-10 ${passwordError ? 'border-destructive/50' : ''}`}
-                      placeholder="••••••••"
+                      placeholder="confirm password here"
                     />
                   </div>
                   {passwordError && <p className="text-destructive text-sm mt-1">{passwordError}</p>}
