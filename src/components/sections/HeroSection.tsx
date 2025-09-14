@@ -1,17 +1,17 @@
 
 import { useEffect, useRef } from "react";
-import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowDown, Github, Instagram, Linkedin } from "lucide-react";
 
 const HeroSection = () => {
   const typedTextRef = useRef<HTMLSpanElement>(null);
   const cursorRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    const titles = ["Developer", "Designer", "Creative"];
+    const titles = ["Developer", "Designer", "Problem Solver", "optimistic"];
     let titleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-    let typingDelay = 100;
+    let typingDelay = 100; 
     
     const type = () => {
       const currentTitle = titles[titleIndex];
@@ -32,11 +32,11 @@ const HeroSection = () => {
       
       if (!isDeleting && charIndex === currentTitle.length) {
         isDeleting = true;
-        typingDelay = 1000; // Pause before deleting
+        typingDelay = 1000; 
       } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         titleIndex = (titleIndex + 1) % titles.length;
-        typingDelay = 500; // Pause before typing next word
+        typingDelay = 500; 
       }
       
       setTimeout(type, typingDelay);
@@ -44,8 +44,8 @@ const HeroSection = () => {
     
     setTimeout(type, 1000);
     
-    // Cursor blinking
-    let blinkInterval = setInterval(() => {
+
+    const blinkInterval = setInterval(() => {
       if (cursorRef.current) {
         cursorRef.current.classList.toggle('opacity-0');
       }
@@ -80,7 +80,7 @@ const HeroSection = () => {
           </h1>
           
           <div className="mb-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <h2 className="hero-text">Your Name</h2>
+            <h2 className="hero-text">Bavly Fayed</h2>
             <div className="hero-text flex items-center mt-2">
               <span>I'm a</span>
               <span className="text-primary mx-3" ref={typedTextRef}></span>
@@ -110,14 +110,14 @@ const HeroSection = () => {
           <div className="flex items-center gap-4 animate-fade-in" style={{ animationDelay: '1s' }}>
             <span className="text-foreground/60">Find me on:</span>
             <div className="flex gap-3">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
+              <a href="https://github.com/Bfayed" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
                 <Github size={18} />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
+              <a href="https://linkedin.com/in/bavlyfayed2003" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
                 <Linkedin size={18} />
               </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
-                <Twitter size={18} />
+              <a href="https://www.instagram.com/iambavly10/" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
+                <Instagram size={18} />
               </a>
             </div>
           </div>
