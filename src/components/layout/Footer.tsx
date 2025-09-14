@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, X } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,13 +16,13 @@ const Footer = () => {
       icon: Linkedin 
     },
     { 
-      name: "Twitter", 
-      href: "https://twitter.com/yourusername", 
-      icon: Twitter 
+      name: "X", 
+      href: "https://x.com/bavlyayman15", 
+      icon: X 
     },
     { 
       name: "Email", 
-      href: "mailto:your.email@example.com", 
+      href: "mailto:Bavlyfayed@gmail.com", 
       icon: Mail 
     }
   ];
@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-gradient">Portfolio<span className="text-primary">.</span></h3>
             <p className="text-foreground/70 max-w-sm">
-              A passionate developer focused on creating interactive, accessible, and responsive web applications.
+              A passionate developer trying to make it out there in the real world.
             </p>
           </div>
 
@@ -66,11 +66,11 @@ const Footer = () => {
             </div>
             <div className="mt-4">
               <a
-                href="/resume.pdf"
+                href="public/Bavly's-Resume.pdf"
                 download
                 className="inline-block mt-2 underline text-foreground/70 hover:text-primary transition-colors"
               >
-                Download Resume
+                My Resume
               </a>
             </div>
           </div>
@@ -78,11 +78,10 @@ const Footer = () => {
 
         <div className="mt-8 pt-6 border-t border-border/30 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-foreground/60">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Bavly Fayed. All rights reserved.
           </p>
           <p className="text-sm text-foreground/60 mt-2 md:mt-0">
-            Designed & Built with ❤️
-          </p>
+            Designed & Built by Bavly Fayed          </p>
         </div>
       </div>
     </footer>
