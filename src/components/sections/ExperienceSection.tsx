@@ -15,58 +15,49 @@ const ExperienceSection = () => {
   const experiences: Experience[] = [
     {
       id: 1,
-      role: "Senior Frontend Developer",
-      company: "Tech Company Inc.",
-      period: "Jan 2023 - Present",
+      role: "Co-op Full Stack Developer",
+      company: "Altec Body Plant in Osceola",
+      period: "May 2025 - Present",
       description: [
-        "Led the development of a new customer-facing web application using React and TypeScript",
-        "Implemented state management with Redux for a complex application with 50+ screens",
-        "Collaborated with UX designers to create a cohesive design system for the company",
-        "Mentored junior developers and conducted code reviews",
+        "During my co-op at Altec’s Osceola division, I worked as a software engineering co-op where I contributed to several Angular front-end applications built with TypeScript, integrated with a C# WebAPI backend and SQL Server. I gained hands-on experience with state management using NgRx ComponentStore, building responsive UIs with Kendo UI, and implementing features that improved efficiency and usability for internal business applications. My role involved collaborating with cross-functional teams, debugging and enhancing existing code, and delivering solutions that followed company coding standards. This experience not only strengthened my technical expertise in TypeScript and modern web development but also gave me valuable exposure to enterprise-level software engineering practices and teamwork.",
       ],
-      technologies: ["React", "TypeScript", "Redux", "Tailwind CSS"],
+      technologies: ["C#", ".Net", "SQL Server", "Angular", "TypeScript" , "Scss", "Kendo UI", "NgRx Component Store"],
     },
     {
       id: 2,
-      role: "Full Stack Developer",
-      company: "Digital Solutions Ltd.",
-      period: "Jun 2020 - Dec 2022",
+      role: "Internship",
+      company: "Vontas",
+      period: "May 2024 - August 2024",
       description: [
-        "Developed RESTful APIs using Node.js and Express",
-        "Built responsive UIs using React and Material UI",
-        "Implemented authentication and authorization using JWT",
-        "Participated in agile development processes, including daily standups and sprint planning",
+        "During my internship at Vontas, I contributed to the development of a website using Spring Boot, helping streamline backend processes and improve efficiency. I supported the integration of RabbitMQ for asynchronous communication between services, ensuring reliable high-volume data transactions in distributed systems. Additionally, I assisted in implementing an MVC architecture to achieve a clean separation of concerns and improve code maintainability. Working closely with senior developers, I also collaborated on enhancing application scalability and fault tolerance by leveraging message queuing and microservices architecture.",
       ],
-      technologies: ["React", "Node.js", "Express", "MongoDB", "Material UI"],
+      technologies: ["Spring Boot", "RabbitMQ", "MVC", "MongoDB"],
     },
     {
       id: 3,
-      role: "Junior Developer",
-      company: "Web Studio Agency",
-      period: "Mar 2018 - May 2020",
+      role: "Various Roles",
+      company: "Service & Retail Industry",
+      period: "2019 - present",
       description: [
-        "Developed and maintained client websites using HTML, CSS, and JavaScript",
-        "Integrated third-party APIs for e-commerce, social media, and analytics",
-        "Fixed bugs and implemented new features for existing websites",
-        "Collaborated with designers to ensure accurate implementation of designs",
+        "Through my work in various service and retail roles at McDonald’s, Pizza Hut, Walmart, Kum & Go, and DoorDash, I developed a strong work ethic and the ability to perform in fast-paced, demanding environments. These experiences taught me humility, financial responsibility, and the value of hard work while strengthening my communication, teamwork, and problem-solving skills. They also gave me a deep appreciation for discipline and perseverance, lessons that continue to guide me in both my personal growth and professional career."
       ],
-      technologies: ["HTML", "CSS", "JavaScript", "jQuery", "WordPress"],
+      technologies: ["Life Experince" , "Work ethics" , "Problem Solving" , "Communication" , "Discipline"],
     },
   ];
 
   const education = [
     {
       id: 1,
-      degree: "Master of Computer Science",
-      institution: "University Name",
-      period: "2016 - 2018",
-      description: "Focused on advanced algorithms, machine learning, and web technologies.",
+      degree: "High school Diploma",
+      institution: "Waukee High School",
+      period: "2018 - 2021",
+      description: "Focused on building myslef and discover my passions and what I like. I believe my discipline during high school whta made me who I am today.",
     },
     {
       id: 2,
-      degree: "Bachelor of Science in Software Engineering",
-      institution: "Another University",
-      period: "2012 - 2016",
+      degree: "Bachelor of Science in Computer Science",
+      institution: "Iowa State University",
+      period: "2023 - December 2026",
       description: "Core curriculum included programming fundamentals, data structures, algorithms, and software design principles.",
     },
   ];
@@ -149,18 +140,22 @@ const ExperienceSection = () => {
           
           <h2 className="section-heading mt-16 animate-fade-in" style={{ animationDelay: '0.5s' }}>Certifications</h2>
           <div className="space-y-4 mt-8">
+
             <div className="glass-card p-5 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              <h3 className="font-semibold">AWS Certified Developer - Associate</h3>
-              <p className="text-sm text-foreground/60 mt-1">Amazon Web Services • 2023</p>
+              <h3 className="font-semibold">C license </h3>
+              <p className="text-sm text-foreground/60 mt-1">Soccer/Football coaching 2022</p>
             </div>
-            <div className="glass-card p-5 animate-fade-in" style={{ animationDelay: '0.7s' }}>
+            
+            {/* <div className="glass-card p-5 animate-fade-in" style={{ animationDelay: '0.7s' }}>
               <h3 className="font-semibold">Professional Scrum Master I (PSM I)</h3>
               <p className="text-sm text-foreground/60 mt-1">Scrum.org • 2022</p>
-            </div>
-            <div className="glass-card p-5 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+            </div> */}
+
+            {/* <div className="glass-card p-5 animate-fade-in" style={{ animationDelay: '0.8s' }}>
               <h3 className="font-semibold">Meta Frontend Developer Certificate</h3>
               <p className="text-sm text-foreground/60 mt-1">Meta • 2021</p>
-            </div>
+            </div> */}
+          
           </div>
         </div>
       </div>
