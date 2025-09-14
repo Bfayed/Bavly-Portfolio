@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { Menu, X, Download, Github, Linkedin, Twitter } from "lucide-react";
+import { Menu, X, Download, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -50,9 +50,9 @@ const Navbar = () => {
       icon: Linkedin 
     },
     { 
-      name: "Twitter", 
+      name: "Instagram", 
       href: "https://twitter.com/yourusername", 
-      icon: Twitter 
+      icon: Instagram 
     }
   ];
 
@@ -64,7 +64,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-gradient">
-          Portfolio<span className="text-primary">.</span>
+          2% about Bavly<span className="text-primary">.</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -97,7 +97,7 @@ const Navbar = () => {
             ))}
 
             <a
-              href="/resume.pdf"
+              href="public/Bavly's-Resume.pdf"
               download
               className="flex items-center bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/80 transition-colors ml-2"
             >
