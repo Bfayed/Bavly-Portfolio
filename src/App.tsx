@@ -15,8 +15,8 @@ export default function App() {
         <Toaster />
         <Sonner />
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Index />} />
+        <Route path="*" element={<NotFound />} />
         </Routes>
       </TooltipProvider>
     </QueryClientProvider>
