@@ -7,12 +7,12 @@ const Footer = () => {
   const socialLinks = [
     { 
       name: "GitHub", 
-      href: "https://github.com/yourusername", 
+      href: "https://github.com/Bfayed", 
       icon: Github 
     },
     { 
       name: "LinkedIn", 
-      href: "https://linkedin.com/in/yourusername", 
+      href: "https://linkedin.com/in/bavlyfayed2003", 
       icon: Linkedin 
     },
     { 
@@ -22,7 +22,7 @@ const Footer = () => {
     },
     { 
       name: "Email", 
-      href: "mailto:Bavlyfayed@gmail.com", 
+      href: "mailto: Bavlyfayed@gmail.com", 
       icon: Mail 
     }
   ];
