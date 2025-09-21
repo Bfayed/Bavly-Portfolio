@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
@@ -16,6 +16,7 @@ export default function App() {
         <Sonner />
         <Routes>
         <Route path="/" element={<Index />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="*" element={<NotFound />} />
         </Routes>
       </TooltipProvider>
