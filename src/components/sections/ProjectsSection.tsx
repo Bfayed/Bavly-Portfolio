@@ -18,63 +18,79 @@ const ProjectsSection = () => {
   const [activeFilter, setActiveFilter] = useState<string>("all");
 
   const projects: Project[] = [
-    {
-      id: 1,
-      title: "E-commerce Platform",
-      description: "A full-featured e-commerce platform built with React, Node.js, and MongoDB. Includes user authentication, product management, cart functionality, and payment processing.",
-      image: "/placeholder.svg",
-      tags: ["React", "Node.js", "MongoDB", "Express"],
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates using Socket.io. Features include task assignments, deadlines, comments, and progress tracking.",
-      image: "/placeholder.svg",
-      tags: ["React", "Socket.io", "Redux", "Material UI"],
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website built with React and Tailwind CSS. Features include dark mode, animations, and contact form.",
-      image: "/placeholder.svg",
-      tags: ["React", "Tailwind CSS", "Framer Motion"],
-      demoUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      id: 4,
-      title: "Weather Dashboard",
-      description: "A weather dashboard that displays current weather data and forecasts for any location. Uses OpenWeatherMap API for data retrieval.",
-      image: "/placeholder.svg",
-      tags: ["JavaScript", "API Integration", "CSS"],
-      demoUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      id: 5,
-      title: "Blog Platform",
-      description: "A blog platform with markdown support, comments, and user authentication. Includes admin dashboard for content management.",
-      image: "/placeholder.svg",
-      tags: ["React", "Node.js", "SQL Server"],
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      id: 6,
-      title: "Fitness Tracker",
-      description: "A fitness tracking application that allows users to log workouts, track progress, and set goals. Includes data visualization.",
-      image: "/placeholder.svg",
-      tags: ["React Native", "Firebase", "D3.js"],
-      demoUrl: "#",
-      githubUrl: "#",
-    },
+  {
+    id: 1,
+    title: "Football Hub (React + Node)",
+    description:
+      "React-based football site (SE/ComS319) with fixtures/news and a Node/Express proxy backend.",
+    image: "/placeholder.svg",
+    tags: ["React", "Node.js", "Express", "REST"],
+    demoUrl: "",
+    githubUrl: "https://github.com/Bfayed/Football-Hub-web-application",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Bavly Portfolio (this site)",
+    description:
+      "Vite + React + Tailwind + shadcn/ui portfolio deployed on GitHub Pages with React Router.",
+    image: "/placeholder.svg",
+    tags: ["React", "Vite", "Tailwind", "shadcn/ui"],
+    demoUrl: "https://bfayed.github.io/Bavly-Portfolio/",
+    githubUrl: "https://github.com/Bfayed/Bavly-Portfolio",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "Sorting 2D Points (Java)",
+    description:
+      "Implements 2D point sorting and geometric utilities; explores comparator design and time complexity.",
+    image: "/placeholder.svg",
+    tags: ["Java", "Algorithms", "Data Structures"],
+    demoUrl: "",
+    githubUrl: "https://github.com/Bfayed/Sorting-2D-Integrs-points-Java",
+  },
+  {
+    id: 5,
+    title: "Stout List (Java)",
+    description:
+      "Data-structures coursework project showcasing custom list implementations, iterators, and unit tests.",
+    image: "/placeholder.svg",
+    tags: ["Java", "OOP", "Data Structures"],
+    demoUrl: "",
+    githubUrl: "https://github.com/Bfayed/Stout-List-Java",
+  },
+  {
+    id: 6,
+    title: "Simple Flask App",
+    description:
+      "Lightweight Python + Flask app with basic routing/forms and server-side rendering; deployment-ready.",
+    image: "/placeholder.svg",
+    tags: ["Python", "Flask"],
+    demoUrl: "",
+    githubUrl: "https://github.com/Bfayed/Simple-application-flask-and-python",
+  },
+  {
+    id: 7,
+    title: "Lizard Game (Java)",
+    description:
+      "Small Java game demonstrating an event loop, input handling, and object-oriented game state.",
+    image: "/placeholder.svg",
+    tags: ["Java", "Game Dev", "OOP"],
+    demoUrl: "",
+    githubUrl: "https://github.com/Bfayed/Lizard-game-Java",
+  },
+  {
+    id: 8,
+    title: "Saint Mary Church Website",
+    description:
+      "Static site for a charitable organization—content structure, accessibility, and simple deployment workflow.",
+    image: "/placeholder.svg",
+    tags: ["HTML", "CSS", "Static Site"],
+    demoUrl: "", 
+    githubUrl: "https://github.com/Charitable-organization/saint-mary-church",
+  },
+
   ];
 
   const filters = [
