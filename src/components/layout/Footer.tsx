@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
             <div className="mt-4">
               <a
-                href="public/Bavly's-Resume.pdf"
+                href="public/BAVLY FAYED RESUME LATEST VERSION.pdf"
                 download
                 className="inline-block mt-2 underline text-foreground/70 hover:text-primary transition-colors"
               >
