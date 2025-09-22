@@ -155,7 +155,7 @@ const Navbar = () => {
             </div>
             
             <a
-              href="docs/BAVLY FAYED RESUME LATEST VERSION.pdf"
+              href="docs/BAVLY-FAYED-RESUME-LATEST-VERSION.pdf"
               download
               className="flex items-center justify-center bg-primary text-white px-4 py-3 rounded-lg hover:bg-primary/80 transition-colors mt-4"
             >
