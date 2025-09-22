@@ -1,6 +1,8 @@
+// put the PDF inside src/assets/resume/
+import resumePdf from "@/assets/resume/BAVLY-FAYED-RESUME-LATEST-VERSION.pdf";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Download, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Menu, X, Download, Github, Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -8,27 +10,10 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -39,44 +24,23 @@ const Navbar = () => {
   ];
 
   const socialLinks = [
-    { 
-      name: "GitHub", 
-      href: "https://github.com/Bfayed", 
-      icon: Github 
-    },
-    { 
-      name: "LinkedIn", 
-      href: "https://linkedin.com/in/bavlyfayed2003", 
-      icon: Linkedin 
-    },
-    { 
-      name: "Instagram", 
-      href: "https://www.instagram.com/iambavly10/", 
-      icon: Instagram 
-    }
+    { name: "GitHub", href: "https://github.com/Bfayed", icon: Github },
+    { name: "LinkedIn", href: "https://linkedin.com/in/bavlyfayed2003", icon: Linkedin },
+    { name: "Instagram", href: "https://www.instagram.com/iambavly10/", icon: Instagram },
   ];
 
   return (
-    <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/90 backdrop-blur-md shadow-md py-3" : "bg-transparent py-5"
-      }`}
-    >
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-background/90 backdrop-blur-md shadow-md py-3" : "bg-transparent py-5"}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-gradient">
           2% about Bavly<span className="text-primary">.</span>
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* Desktop */}
         <nav className="hidden md:flex items-center space-x-6">
           <div className="flex space-x-4">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="nav-link"
-                onClick={closeMenu}
-              >
+              <a key={link.name} href={link.href} className="nav-link">
                 {link.name}
               </a>
             ))}
@@ -96,20 +60,21 @@ const Navbar = () => {
               </a>
             ))}
 
+            {/* ✅ Use the imported asset URL */}
             <a
-              href="public/Bavly's-Resume.pdf"
-              download
+              href={resumePdf}
+              download="Bavly_Fayed_Resume.pdf"
               className="flex items-center bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/80 transition-colors ml-2"
             >
               <Download size={16} className="mr-2" />
-              Resume
+              My Resume
             </a>
           </div>
         </nav>
 
-        {/* Mobile Navigation Toggle */}
+        {/* Mobile toggle */}
         <button
-          onClick={toggleMenu}
+          onClick={() => setIsMenuOpen((v) => !v)}
           className="md:hidden text-foreground focus:outline-none"
           aria-label="Toggle menu"
         >
@@ -117,12 +82,8 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation Menu */}
-      <div
-        className={`fixed inset-0 bg-background/95 backdrop-blur-md z-40 md:hidden transition-transform duration-300 ease-in-out ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
+      {/* Mobile menu */}
+      <div className={`fixed inset-0 bg-background/95 backdrop-blur-md z-40 md:hidden transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="flex flex-col h-full pt-20 px-6 space-y-8">
           <div className="flex flex-col space-y-6">
             {navLinks.map((link) => (
@@ -130,7 +91,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 className="text-xl font-medium hover:text-primary transition-colors"
-                onClick={closeMenu}
+                onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
               </a>
@@ -153,10 +114,11 @@ const Navbar = () => {
                 </a>
               ))}
             </div>
-            
+
+            {/* ✅ Same URL here; do NOT hardcode "docs/..." */}
             <a
-              href="docs/BAVLY-FAYED-RESUME-LATEST-VERSION.pdf"
-              download
+              href={resumePdf}
+              download="Bavly_Fayed_Resume.pdf"
               className="flex items-center justify-center bg-primary text-white px-4 py-3 rounded-lg hover:bg-primary/80 transition-colors mt-4"
             >
               <Download size={18} className="mr-2" />

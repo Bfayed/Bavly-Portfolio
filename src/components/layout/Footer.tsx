@@ -1,4 +1,4 @@
-
+import resumePdf from "@docs/BAVLY-FAYED-RESUME-LATEST-VERSION.pdf";
 import { Github, Linkedin, Mail, X } from "lucide-react";
 
 const Footer = () => {
@@ -65,9 +65,9 @@ const Footer = () => {
               ))}
             </div>
             <div className="mt-4">
-              <a
-                href="docs/BAVLY-FAYED-RESUME-LATEST-VERSION.pdf"
-                download
+
+          <a href={resumePdf} download="BAVLY-FAYED-RESUME-LATEST-VERSION.pdf"
+               
                 className="inline-block mt-2 underline text-foreground/70 hover:text-primary transition-colors"
               >
                 My Resume
