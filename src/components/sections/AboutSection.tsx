@@ -16,6 +16,7 @@ const AboutSection = () => {
     { name: "Angular", value: 85 },
     { name: "Node.js", value: 70 },
     { name: "UI/UX Design", value: 80 },
+    { name: "SignalR", value: 80 }
 
 
   ];
@@ -51,7 +52,7 @@ const AboutSection = () => {
           
           <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <p className="text-foreground/80">
-              Hello! I'm Bavly Fayed, a passionate developer with over X years of experience in creating digital solutions. I enjoy tackling complex problems and turning them into simple and beautiful interface designs.
+              Hello! I'm Bavly Fayed, a passionate developer with over 4 years of experience in creating digital solutions. I enjoy tackling complex problems and turning them into simple and beautiful interface designs.
             </p>
             
             <p className="text-foreground/80">
@@ -66,7 +67,7 @@ const AboutSection = () => {
           <div className="mt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <h3 className="text-xl font-semibold mb-4">Tech Stack</h3>
             <div className="flex flex-wrap gap-2">
-              {["Java", "Python", " .Net", "C#", "React", "Node.js", "Express", "MongoDB", "JavaScript", "HTML", "Angular", "Tailwind CSS", "TypeScript", "Spring Boot", "SQL Server", "RabbitMQ", "MVC"].map((tech) => (
+              {["Java", "Python", " .Net", "C#", "React", "Node.js", "Express", "MongoDB", "JavaScript", "HTML", "Angular", "Tailwind CSS", "TypeScript", "Spring Boot", "SQL Server", "RabbitMQ", "MVC", "SignalR"].map((tech) => (
                 <span key={tech} className="bg-secondary/50 text-foreground/90 px-3 py-1 rounded-full text-sm">
                   {tech}
                 </span>

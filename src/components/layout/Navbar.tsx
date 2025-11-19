@@ -63,7 +63,7 @@ const Navbar = () => {
             {}
             <a
               href={resumePdf}
-              download="Bavly_Fayed_Resume.pdf"
+              download="BavlyResume.pdf"
               className="flex items-center bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/80 transition-colors ml-2"
             >
               <Download size={16} className="mr-2" />
@@ -118,7 +118,7 @@ const Navbar = () => {
             {}
             <a
               href={resumePdf}
-              download="Bavly_Fayed_Resume.pdf"
+              download="BavlyResume.pdf"
               className="flex items-center justify-center bg-primary text-white px-4 py-3 rounded-lg hover:bg-primary/80 transition-colors mt-4"
             >
               <Download size={18} className="mr-2" />

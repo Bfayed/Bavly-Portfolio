@@ -21,7 +21,7 @@ const ExperienceSection = () => {
       description: [
         "During my co-op at Altec’s Osceola division, I worked as a software engineering co-op where I contributed to several Angular front-end applications built with TypeScript, integrated with a C# WebAPI backend and SQL Server. I gained hands-on experience with state management using NgRx ComponentStore, building responsive UIs with Kendo UI, and implementing features that improved efficiency and usability for internal business applications. My role involved collaborating with cross-functional teams, debugging and enhancing existing code, and delivering solutions that followed company coding standards. This experience not only strengthened my technical expertise in TypeScript and modern web development but also gave me valuable exposure to enterprise-level software engineering practices and teamwork.",
       ],
-      technologies: ["C#", ".Net", "SQL Server", "Angular", "TypeScript" , "Scss", "Kendo UI", "NgRx Component Store"],
+      technologies: ["C#", ".Net", "SQL Server", "Angular", "TypeScript" , "Scss", "Kendo UI", "NgRx Component Store", "SignalR"],
     },
     {
       id: 2,

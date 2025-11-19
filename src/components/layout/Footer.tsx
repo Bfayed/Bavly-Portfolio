@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
             <div className="mt-4">
 
-          <a href={resumePdf} download="BAVLY-FAYED-RESUME-LATEST-VERSION.pdf"
+          <a href={resumePdf} download="BavlyResume.pdf"
                
                 className="inline-block mt-2 underline text-foreground/70 hover:text-primary transition-colors"
               >
@@ -81,7 +81,7 @@ const Footer = () => {
             © {currentYear} Bavly Fayed. All rights reserved.
           </p>
           <p className="text-sm text-foreground/60 mt-2 md:mt-0">
-            Designed & Built by Bavly Fayed          </p>
+            Designed & Built by Bavly Fayed  </p>
         </div>
       </div>
     </footer>
