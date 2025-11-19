@@ -9,6 +9,11 @@ export default defineConfig(({ mode }) => ({
  base: mode === "production" ? "/Bavly-Portfolio/" : "/",
 
 
+     build: {
+    outDir: "docs",
+    emptyOutDir: true,
+  },
+
   server: {
     host: "::",
     port: 8080,
@@ -20,6 +25,8 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      "@docs": path.resolve(__dirname, "./src/docs"),
+      "@assets": path.resolve(__dirname, "./src/assets"),  
     },
   },
 }));

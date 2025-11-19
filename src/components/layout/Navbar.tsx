@@ -1,5 +1,5 @@
-// put the PDF inside src/assets/resume/
-import resumePdf from "@/assets/resume/BAVLY-FAYED-RESUME-LATEST-VERSION.pdf";
+
+import resumePdf from "@assets/BavlyResume.pdf";
 
 import { useState, useEffect } from "react";
 import { Menu, X, Download, Github, Linkedin, Instagram } from "lucide-react";

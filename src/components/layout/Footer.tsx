@@ -1,4 +1,4 @@
-import resumePdf from "@docs/BAVLY-FAYED-RESUME-LATEST-VERSION.pdf";
+import resumePdf from "@assets/BavlyResume.pdf";
 import { Github, Linkedin, Mail, X } from "lucide-react";
 
 const Footer = () => {
