@@ -33,7 +33,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
       <main className="flex-grow">{children}</main>
       <Footer />
 
-      {/* Scroll to top button */}
+      {}
       <button
         onClick={scrollToTop}
         className={`fixed bottom-8 right-8 p-3 rounded-full bg-primary text-white shadow-lg transition-all duration-300 z-50 ${

@@ -60,7 +60,7 @@ const Navbar = () => {
               </a>
             ))}
 
-            {/* ✅ Use the imported asset URL */}
+            {}
             <a
               href={resumePdf}
               download="Bavly_Fayed_Resume.pdf"
@@ -72,7 +72,7 @@ const Navbar = () => {
           </div>
         </nav>
 
-        {/* Mobile toggle */}
+        {}
         <button
           onClick={() => setIsMenuOpen((v) => !v)}
           className="md:hidden text-foreground focus:outline-none"
@@ -82,7 +82,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {}
       <div className={`fixed inset-0 bg-background/95 backdrop-blur-md z-40 md:hidden transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="flex flex-col h-full pt-20 px-6 space-y-8">
           <div className="flex flex-col space-y-6">
@@ -115,7 +115,7 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* ✅ Same URL here; do NOT hardcode "docs/..." */}
+            {}
             <a
               href={resumePdf}
               download="Bavly_Fayed_Resume.pdf"
