@@ -8,8 +8,8 @@ export default defineConfig(({ mode }) => ({
  base: mode === "production" ? "/Bavly-Portfolio/" : "/",
 
 
-     build: {
-    outDir: "docs",
+  build: {
+    outDir: "dist",
     emptyOutDir: true,
   },
 
