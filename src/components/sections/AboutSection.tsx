@@ -7,16 +7,16 @@ const AboutSection = () => {
     { name: "Java + Spring Boot", value: 70 },
     { name: "Python", value: 70 },
     { name: "C# + .Net", value: 60 },
-    { name: "SQL Server", value: 50 },
-    { name: "MVC", value: 60 },
+    { name: "SQL Server", value: 60 },
+    { name: "MVC", value: 80 },
     { name: "RabbitMQ", value: 60 },
     { name: "HTML & CSS", value: 90 },
     { name: "JavaScript & TypeScript", value: 80 },
     { name: "React", value: 70 },
     { name: "Angular", value: 85 },
-    { name: "Node.js", value: 70 },
+    { name: "Node.js", value: 50 },
     { name: "UI/UX Design", value: 80 },
-    { name: "SignalR", value: 80 }
+    { name: "WebSockets / SignalR", value: 80 }
 
 
   ];

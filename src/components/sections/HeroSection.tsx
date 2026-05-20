@@ -7,7 +7,7 @@ const HeroSection = () => {
   const cursorRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    const titles = ["Developer", "Designer", "Problem Solver", "optimistic"];
+    const titles = ["Developer", "Problem Solver", "optimistic", "team player", "lifelong learner", "creative thinker", "adaptable", "passionate", "collaborative", "innovative", "dedicated", "proactive", "resilient", "analytical", "curious", "efficient"];
     let titleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

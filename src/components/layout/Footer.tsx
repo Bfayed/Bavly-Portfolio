@@ -1,4 +1,4 @@
-import resumePdf from "@assets/BavlyResume.pdf";
+import resumePdf from "@assets/Bavly-Fayed-Resume.pdf";
 import { Github, Linkedin, Mail, X } from "lucide-react";
 
 const Footer = () => {
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
             <div className="mt-4">
 
-          <a href={resumePdf} download="BavlyResume.pdf"
+          <a href={resumePdf} download="Bavly-Fayed-Resume.pdf"
                
                 className="inline-block mt-2 underline text-foreground/70 hover:text-primary transition-colors"
               >

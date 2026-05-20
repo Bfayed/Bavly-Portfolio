@@ -1,5 +1,5 @@
 
-import resumePdf from "@assets/BavlyResume.pdf";
+import resumePdf from "@assets/Bavly-Fayed-Resume.pdf";
 
 import { useState, useEffect } from "react";
 import { Menu, X, Download, Github, Linkedin, Instagram } from "lucide-react";
@@ -63,7 +63,7 @@ const Navbar = () => {
             {}
             <a
               href={resumePdf}
-              download="BavlyResume.pdf"
+              download="Bavly-Fayed-Resume.pdf"
               className="flex items-center bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/80 transition-colors ml-2"
             >
               <Download size={16} className="mr-2" />
@@ -118,7 +118,7 @@ const Navbar = () => {
             {}
             <a
               href={resumePdf}
-              download="BavlyResume.pdf"
+              download="Bavly-Fayed-Resume.pdf"
               className="flex items-center justify-center bg-primary text-white px-4 py-3 rounded-lg hover:bg-primary/80 transition-colors mt-4"
             >
               <Download size={18} className="mr-2" />
