@@ -14,10 +14,21 @@ interface Experience {
 const ExperienceSection = () => {
   const experiences: Experience[] = [
     {
+      id: 0,
+      role: "Software Engineering Intern",
+      company: "Emerson/AspenTech",
+      period: "May 2026 - August 2026",
+      description: [
+       "As a Software Engineering Intern at AspenTech, an Emerson company, I contribute to real-world enterprise software projects, developing and enhancing full-stack features while gaining hands-on experience with large-scale systems in a professional engineering environment.",
+      ],
+      technologies: ["Java", "JAX-RS", "RestAPIs", "SQL Server", "Angular", "TypeScript" , "Scss", "WebSockets" , "Gradle"
+      ],
+    },
+    {
       id: 1,
       role: "Co-op Full Stack Developer",
       company: "Altec Body Plant in Osceola",
-      period: "May 2025 - Present",
+      period: "May 2025 - January 2026",
       description: [
         "During my co-op at Altec’s Osceola division, I worked as a software engineering co-op where I contributed to several Angular front-end applications built with TypeScript, integrated with a C# WebAPI backend and SQL Server. I gained hands-on experience with state management using NgRx ComponentStore, building responsive UIs with Kendo UI, and implementing features that improved efficiency and usability for internal business applications. My role involved collaborating with cross-functional teams, debugging and enhancing existing code, and delivering solutions that followed company coding standards. This experience not only strengthened my technical expertise in TypeScript and modern web development but also gave me valuable exposure to enterprise-level software engineering practices and teamwork.",
       ],
