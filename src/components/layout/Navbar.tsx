@@ -33,7 +33,7 @@ const Navbar = () => {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-background/90 backdrop-blur-md shadow-md py-3" : "bg-transparent py-5"}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-gradient">
-          2% about Bavly<span className="text-primary">.</span>
+          Bavly Fayed<span className="text-primary">.</span>
         </Link>
 
         {/* Desktop */}

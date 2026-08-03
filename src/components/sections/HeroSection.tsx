@@ -75,7 +75,7 @@ const HeroSection = () => {
       </div>
       
       <div className="container relative z-10 mx-auto px-4">
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(300px,430px)]">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(330px,470px)]">
           <div className="max-w-4xl lg:max-w-none">
             <h1 className="text-sm sm:text-base text-primary font-semibold mb-4 opacity-90 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Hello, my name is
@@ -125,14 +125,15 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="order-first mx-auto w-full max-w-[260px] animate-fade-in sm:max-w-xs lg:order-none lg:max-w-[430px]" style={{ animationDelay: '0.5s' }}>
-            <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-primary/30 bg-secondary/50 shadow-2xl shadow-primary/10">
+          <div className="order-first mx-auto w-full max-w-[280px] animate-fade-in sm:max-w-[340px] lg:order-none lg:max-w-[470px]" style={{ animationDelay: '0.5s' }}>
+            <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-primary/30 bg-secondary/50 shadow-2xl shadow-primary/20">
               <img
                 src={myPic}
                 alt="Bavly Fayed smiling by the waterfront"
-                className="h-full w-full object-cover object-[50%_72%]"
+                className="h-full w-full object-cover object-[50%_72%] [mask-image:radial-gradient(ellipse_at_center,black_58%,rgba(0,0,0,0.85)_72%,transparent_100%)]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/45 via-transparent to-transparent" aria-hidden="true"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_52%,hsl(var(--background)/0.28)_78%,hsl(var(--background)/0.72)_100%)]" aria-hidden="true"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-background/35 via-transparent to-transparent" aria-hidden="true"></div>
             </div>
           </div>
         </div>
