@@ -32,8 +32,11 @@ const Navbar = () => {
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-background/90 backdrop-blur-md shadow-md py-3" : "bg-transparent py-5"}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-gradient">
-          2% about Bavly<span className="text-primary">.</span>
+        <Link
+          to="/"
+          className="whitespace-nowrap text-xl font-extrabold leading-none text-foreground drop-shadow-[0_0_14px_rgba(59,130,246,0.45)] transition-colors hover:text-primary sm:text-2xl"
+        >
+          <span className="text-primary">2%</span> About Bavly<span className="text-primary">.</span>
         </Link>
 
         {/* Desktop */}
