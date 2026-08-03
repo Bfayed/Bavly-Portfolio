@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from "react";
 import { ArrowDown, Github, Instagram, Linkedin } from "lucide-react";
+import myPic from "@assets/my-pic.jpeg";
 
 const HeroSection = () => {
   const typedTextRef = useRef<HTMLSpanElement>(null);
@@ -73,52 +74,65 @@ const HeroSection = () => {
         </div>
       </div>
       
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl">
-          <h1 className="text-sm sm:text-base text-primary font-semibold mb-4 opacity-90 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Hello, my name is
-          </h1>
-          
-          <div className="mb-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <h2 className="hero-text">Bavly Fayed</h2>
-            <div className="hero-text flex items-center mt-2">
-              <span>I'm a</span>
-              <span className="text-primary mx-3" ref={typedTextRef}></span>
-              <span className="text-primary" ref={cursorRef}>|</span>
+      <div className="container relative z-10 mx-auto px-4">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(300px,430px)]">
+          <div className="max-w-4xl lg:max-w-none">
+            <h1 className="text-sm sm:text-base text-primary font-semibold mb-4 opacity-90 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              Hello, my name is
+            </h1>
+            
+            <div className="mb-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <h2 className="hero-text">Bavly Fayed</h2>
+              <div className="hero-text flex flex-wrap items-center gap-x-3 gap-y-1 mt-2">
+                <span>I'm a</span>
+                <span className="text-primary" ref={typedTextRef}></span>
+                <span className="text-primary" ref={cursorRef}>|</span>
+              </div>
+            </div>
+            
+            <p className="text-xl text-foreground/80 max-w-2xl mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+              Building digital experiences that combine beautiful design with solid engineering. Passionate about creating products that solve real problems.
+            </p>
+            
+            <div className="flex flex-wrap gap-4 mb-12 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+              <a 
+                href="#projects" 
+                className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg transition-all shadow-lg hover:shadow-primary/30 font-medium"
+              >
+                View My Work
+              </a>
+              <a 
+                href="#contact" 
+                className="px-8 py-3 bg-secondary hover:bg-secondary/90 text-white rounded-lg transition-all border border-primary/30 font-medium"
+              >
+                Contact Me
+              </a>
+            </div>
+            
+            <div className="flex items-center gap-4 animate-fade-in" style={{ animationDelay: '1s' }}>
+              <span className="text-foreground/60">Find me on:</span>
+              <div className="flex gap-3">
+                <a href="https://github.com/Bfayed" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
+                  <Github size={18} />
+                </a>
+                <a href="https://linkedin.com/in/bavlyfayed2003" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
+                  <Linkedin size={18} />
+                </a>
+                <a href="https://www.instagram.com/iambavly10/" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
+                  <Instagram size={18} />
+                </a>
+              </div>
             </div>
           </div>
-          
-          <p className="text-xl text-foreground/80 max-w-2xl mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            Building digital experiences that combine beautiful design with solid engineering. Passionate about creating products that solve real problems.
-          </p>
-          
-          <div className="flex flex-wrap gap-4 mb-12 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            <a 
-              href="#projects" 
-              className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg transition-all shadow-lg hover:shadow-primary/30 font-medium"
-            >
-              View My Work
-            </a>
-            <a 
-              href="#contact" 
-              className="px-8 py-3 bg-secondary hover:bg-secondary/90 text-white rounded-lg transition-all border border-primary/30 font-medium"
-            >
-              Contact Me
-            </a>
-          </div>
-          
-          <div className="flex items-center gap-4 animate-fade-in" style={{ animationDelay: '1s' }}>
-            <span className="text-foreground/60">Find me on:</span>
-            <div className="flex gap-3">
-              <a href="https://github.com/Bfayed" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
-                <Github size={18} />
-              </a>
-              <a href="https://linkedin.com/in/bavlyfayed2003" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
-                <Linkedin size={18} />
-              </a>
-              <a href="https://www.instagram.com/iambavly10/" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground/60 hover:text-primary transition-all">
-                <Instagram size={18} />
-              </a>
+
+          <div className="order-first mx-auto w-full max-w-[260px] animate-fade-in sm:max-w-xs lg:order-none lg:max-w-[430px]" style={{ animationDelay: '0.5s' }}>
+            <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-primary/30 bg-secondary/50 shadow-2xl shadow-primary/10">
+              <img
+                src={myPic}
+                alt="Bavly Fayed smiling by the waterfront"
+                className="h-full w-full object-cover object-[50%_72%]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/45 via-transparent to-transparent" aria-hidden="true"></div>
             </div>
           </div>
         </div>
