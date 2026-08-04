@@ -3,7 +3,6 @@ import resumePdf from "@assets/Bavly-Fayed-Resume.pdf";
 
 import { useState, useEffect } from "react";
 import { Menu, X, Download, Github, Linkedin, Instagram } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +15,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
@@ -32,12 +31,12 @@ const Navbar = () => {
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-background/90 backdrop-blur-md shadow-md py-3" : "bg-transparent py-5"}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link
-          to="/"
+        <a
+          href="#home"
           className="whitespace-nowrap text-xl font-extrabold leading-none text-foreground drop-shadow-[0_0_14px_rgba(59,130,246,0.45)] transition-colors hover:text-primary sm:text-2xl"
         >
           <span className="text-primary">2%</span> About Bavly<span className="text-primary">.</span>
-        </Link>
+        </a>
 
         {/* Desktop */}
         <nav className="hidden md:flex items-center space-x-6">
